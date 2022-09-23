@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from './Introduction.module.scss';
 
 const Introduction = (props) => {
-  const [count, setCount] = useState(0);
-
   return (
     <div className={classes.wave}>
         <svg

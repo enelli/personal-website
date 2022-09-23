@@ -37,7 +37,7 @@ const Projects = (props) => {
         <div className={classes.container}>
             <h2> Projects </h2>
             {Object.entries(cards).map(([key, value]) => (
-                <Card title={key} info={value}/>
+                <Card key={key} title={key} info={value}/>
             ))}
         </div>
     );

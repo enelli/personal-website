@@ -67,6 +67,7 @@ const Experience = (props) => {
             >
                 {Object.entries(experiences).map(([key, value]) => (
                     <VerticalTimelineElement
+                        key={key}
                         className={classes.timelineElement}
                         textClassName={classes.timelineElement}
                         contentStyle={{ 
