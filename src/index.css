@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Elsie&display=swap');
+
+:root {
+  --dark-blue: #1C1E5B;
+  --light-blue: #17C3B2;
+  --red: #FE6D73;
+  --purple: #8A5F98;
+} 
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Comfortaa', Courier, monospace;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--dark-blue);
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a:link, a:-webkit-any-link {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.vertical-timeline::before {
+  top: 30px !important;
+}

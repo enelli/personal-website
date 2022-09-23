@@ -1,0 +1,158 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.houses {
+    right: -12%;
+    margin-right: 0; //calc(min(15vw, 20px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.container {
+    position: relative;
+    background: #1B1D57;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.moon {
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 50%;
+    left: -25%;
+    z-index: 1;
+
+    background: #FCFECC;
+    border: 3px solid #FE6D73;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: ease all .5s;
+}
+
+.housetall {
+    margin-top: -2px;
+    z-index: 2;
+    transition: ease all .5s;
+}
+
+.housewide {
+    margin-top: -2px;
+    z-index: 2;
+    transition: ease all .5s;
+}
+
+.header {
+    font-family: 'Elsie', cursive, Courier, monospace;
+    color: var(--red);
+    margin: 0 !important;
+    transition: ease all .5s;
+}
+
+.subheader {
+    transition: ease all .5s;
+}
+
+@media screen and (min-width: 900px) {
+    .title {
+        margin-left: 150px;
+    }
+
+    .header {
+        font-size: 6rem;
+    }
+    
+    .subheader {
+        font-size: 2rem;
+    }
+
+    .housetall {
+        width: 520px;
+    }
+    
+    .housewide {
+        width: 370px;
+    }
+
+    .moon {
+        width: 300px;
+        height: 300px;
+        border-width: 7px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 899px) {
+    .title {
+        margin-left: 150px;
+    }
+
+    .header {
+        font-size: 4rem;
+    }
+    
+    .subheader {
+        font-size: 1.5rem;
+    }
+
+    .housetall {
+        width: 260px;
+    }
+    
+    .housewide {
+        width: 185px;
+    }
+
+    .moon {
+        width: 150px;
+        height: 150px;
+        border-width: 5px;
+    }
+
+    .spacer {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        font-size: 3rem;
+    }
+      
+    .subheader {
+        font-size: 1rem;
+    }
+
+    .housetall {
+        width: 260px;
+    }
+    
+    .housewide {
+        width: 185px;
+    }
+
+    .moon {
+        left: -10%;
+        width: 100px;
+        height: 100px;
+    }
+}

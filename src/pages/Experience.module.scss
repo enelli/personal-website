@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    background: #1B1D57;
+    top: -30px;
+    width: 70vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+.timelineElement {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+    
+    padding: 0 0 0 1em !important;
+    box-shadow: none !important;
+}
+
+.summary {
+    color: var(--light-blue);
+}
